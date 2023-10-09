@@ -1,26 +1,26 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "smart",
-    "host": "localhost",
+    "username": "freedb_yuliia",
+    "password": "WstaQ$rgaky?9A4",
+    "database": "freedb_boiler_shop",
+    "host": "sql.freedb.tech",
     "dialect": "mysql",
-    "port": 3305
+    "port": 3306
   },
   "test": {
-    "username": "root",
-    "password": "root",
-    "database": "smart",
-    "host": "localhost",
+    "username": "freedb_yuliia",
+    "password": "WstaQ$rgaky?9A4",
+    "database": "freedb_boiler_shop",
+    "host": "sql.freedb.tech",
     "dialect": "mysql",
-    "port": 3305
+    "port": 3306
   },
   "production": {
-    "username": "root",
-    "password": "root",
-    "database": "smart",
-    "host": "localhost",
+    "username": "freedb_yuliia",
+    "password": "WstaQ$rgaky?9A4",
+    "database": "freedb_boiler_shop",
+    "host": "sql.freedb.tech",
     "dialect": "mysql",
-    "port": 3305
+    "port": 3306
   }
 }
