@@ -29,7 +29,7 @@ const partsManufacturers = [
 module.exports = {
   async up (queryInterface, Sequelize) {
     return queryInterface.bulkInsert('BoilerParts',
-     [...Array(100)].map(() => ({
+     [...Array(150)].map(() => ({
       boiler_manufacturer:
       boilerManufacturers[
         Math.floor(Math.random() * boilerManufacturers.length)
@@ -44,7 +44,7 @@ module.exports = {
       images: JSON.stringify(
         [...Array(7)].map(
           () =>
-          `${faker.image.abstract()}?random=${faker.random.numeric(30)}`,
+          `${faker.image.city()}?random=${faker.random.numeric(30)}`,
         ),
       ),
       vendor_code: faker.internet.password(),

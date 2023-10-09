@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "freedb_yuliia",
-    "password": "WstaQ$rgaky?9A4",
+    "password": "*R*z67r%BYME58s",
     "database": "freedb_boiler_shop",
     "host": "sql.freedb.tech",
     "dialect": "mysql",
@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "freedb_yuliia",
-    "password": "WstaQ$rgaky?9A4",
+    "password": "*R*z67r%BYME58s",
     "database": "freedb_boiler_shop",
     "host": "sql.freedb.tech",
     "dialect": "mysql",
@@ -17,7 +17,7 @@
   },
   "production": {
     "username": "freedb_yuliia",
-    "password": "WstaQ$rgaky?9A4",
+    "password": "*R*z67r%BYME58s",
     "database": "freedb_boiler_shop",
     "host": "sql.freedb.tech",
     "dialect": "mysql",
