@@ -2,10 +2,10 @@ import { Body, Controller, Post, UseGuards } from '@nestjs/common';
 import { PaymentService } from './payment.service';
 import { MakePaymentDto } from './dto/make-paymen.dto';
 import { AuthenticatedGuard } from 'src/auth/authenticated.guard';
-import { ApiOkResponse } from '@nestjs/swagger';
+import { ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { MakePaymentResponse } from './types';
 import { CheckPaymentDto } from './dto/chek-payment.dto';
-
+@ApiTags('Payment')
 @Controller('payment')
 export class PaymentController {
     constructor(private paymentService: PaymentService){}

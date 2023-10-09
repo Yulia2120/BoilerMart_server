@@ -4,9 +4,9 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { LocalAuthGuard } from 'src/auth/local.auth.guard';
 import { AuthenticatedGuard } from 'src/auth/authenticated.guard';
 import { LoginCheckResponse, LoginUserRequest, LoginUserResponse, LogoutUserResponse, SignupResponse } from './types';
-import { ApiBody, ApiOkResponse } from '@nestjs/swagger';
+import { ApiBody, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 
-
+@ApiTags('Users')
 @Controller('users')
 export class UsersController {
     constructor(private readonly usersService: UsersService){}

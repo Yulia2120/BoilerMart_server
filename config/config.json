@@ -2,25 +2,25 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "test",
+    "database": "smart",
     "host": "localhost",
     "dialect": "mysql",
-    "port":3305
+    "port": 3305
   },
   "test": {
     "username": "root",
     "password": "root",
-    "database": "test",
+    "database": "smart",
     "host": "localhost",
     "dialect": "mysql",
-    "port":3305
+    "port": 3305
   },
   "production": {
     "username": "root",
     "password": "root",
-    "database": "test",
+    "database": "smart",
     "host": "localhost",
     "dialect": "mysql",
-    "port":3305
+    "port": 3305
   }
 }

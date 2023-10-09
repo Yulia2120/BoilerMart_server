@@ -2,9 +2,10 @@ import { Body, Controller, Delete, Get, Param, Patch, Post, UseGuards } from '@n
 import { ShoppingCartService } from './shopping-cart.service';
 import { AuthenticatedGuard } from 'src/auth/authenticated.guard';
 import { AddToCartDto } from './dto/add-to-card.dto';
-import { ApiBody, ApiOkResponse } from '@nestjs/swagger';
+import { ApiBody, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { AddToCardResponse, GetAllResponse, TotalPriceRequest, TotalPriceResponse, UpdateCountRequest, UpdateCountResponse } from './types';
 
+@ApiTags('Shopping Cart')
 @Controller('shopping-cart')
 export class ShoppingCartController {
     constructor(private readonly shoppingCartService: ShoppingCartService){}

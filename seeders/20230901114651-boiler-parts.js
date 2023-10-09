@@ -29,7 +29,7 @@ const partsManufacturers = [
 module.exports = {
   async up (queryInterface, Sequelize) {
     return queryInterface.bulkInsert('BoilerParts',
-     [...Array(50)].map(() => ({
+     [...Array(100)].map(() => ({
       boiler_manufacturer:
       boilerManufacturers[
         Math.floor(Math.random() * boilerManufacturers.length)
@@ -63,3 +63,4 @@ module.exports = {
     return queryInterface.bulkDelete('BoilerParts', null, {});
   }
 };
+

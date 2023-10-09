@@ -1,9 +1,10 @@
 import { Controller, Query, UseGuards, Param, Post, Get, Body} from '@nestjs/common';
 import { BoilerPartsService } from './boiler-parts.service';
 import { AuthenticatedGuard } from 'src/auth/authenticated.guard';
-import { ApiBody, ApiOkResponse } from '@nestjs/swagger';
+import { ApiBody, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { FindOneResponse, GetBestsellersResponse, GetByNameRequest, GetByNameResponse, GetNewResponse, PaginateAndFilterResponse, SearchRequest, SearchResponse } from './types';
 
+@ApiTags('BoilerParts')
 @Controller('boiler-parts')
 export class BoilerPartsController {
     constructor(private readonly boilerPartsService: BoilerPartsService){}
