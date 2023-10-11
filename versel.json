@@ -1,9 +1,7 @@
 { 
     "framework": "nestjs",
-
-    "build": 
-        {
-            "output": "public"
-        }
+    "buildCommand": "npm run build",
+    "installCommand": "npm install",
+    "outputDirectory": "build"
 
 }
