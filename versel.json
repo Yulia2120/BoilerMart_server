@@ -1,32 +1,7 @@
 { 
     "framework": "nestjs",
-    "version": 2,
-    "env": {
-        "SQL_LOGGING": "true",
-        "SQL_DIALECT": "mysql",
-        "DATABASE_HOST": "sql.freedb.tech",
-        "DATABASE_PORT": "3306",
-        "DATABASE_USER": "freedb_yuliia",
-        "DATABASE_PASSWORD": "*R*z67r%BYME58s",
-        "DATABASE_NAME": "freedb_boiler_shop"
-    },
-    "builds": [
-        {
-            "src": "src/main.ts",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "src/main.ts",
-            "methods": [
-                "GET",
-                "POST",
-                "PUT",
-                "DELETE"
-            ]
-        }
-    ]
-  
+    "buildCommand": "npm run build",
+    "installCommand": "npm install",
+    "outputDirectory": "build"
+   
 }
