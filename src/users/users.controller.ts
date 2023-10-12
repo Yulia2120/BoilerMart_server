@@ -30,7 +30,7 @@ export class UsersController {
 
     @ApiOkResponse({type: LoginCheckResponse})
     @Get('/login-check')
-    //@UseGuards(AuthenticatedGuard)
+    @UseGuards(AuthenticatedGuard)
     loginCheck(@Request() req){
         return req.user;
     }
