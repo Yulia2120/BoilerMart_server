@@ -16,7 +16,7 @@ async function bootstrap() {
   app.use(passport.session());
 
   app.enableCors({
-    //credentials: true,
+    credentials: true,
     origin: ['https://boiler-mart-client.vercel.app'],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
   });
