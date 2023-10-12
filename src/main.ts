@@ -17,7 +17,7 @@ async function bootstrap() {
 
   app.enableCors({
     credentials: true,
-    origin: ['http://localhost:3001', 'https://boiler-mart-client-blkb8n55f-yulia2120.vercel.app']
+    origin: ['http://localhost:3001', 'https://boiler-mart-client.vercel.app/']
   });
 
   const config = new DocumentBuilder()
