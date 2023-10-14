@@ -16,10 +16,10 @@ async function bootstrap() {
   app.use(passport.session());
 
  app.enableCors({
-  credentials: true,
+  // credentials: true,
   origin: 'https://tubular-cobbler-ec8367.netlify.app',
-  methods: 'GET, POST, PUT, PATCH, DELETE',
-  allowedHeaders: 'Content-Type, Accept, Authorization',
+  // methods: 'GET, POST, PUT, PATCH, DELETE',
+  // allowedHeaders: 'Content-Type, Accept, Authorization',
   });
   
  
