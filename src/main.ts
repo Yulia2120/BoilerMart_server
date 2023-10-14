@@ -18,7 +18,7 @@ async function bootstrap() {
   
   app.enableCors({
     credentials: true,
-    origin: ['https://652a836e603f7a29840d1b67--spectacular-lokum-7c0117.netlify.app']
+    origin: ['https://652a907f5b675c2f849c6228--tubular-cobbler-ec8367.netlify.app']
   });
 
   const config = new DocumentBuilder()
