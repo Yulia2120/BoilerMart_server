@@ -15,17 +15,14 @@ async function bootstrap() {
   app.use(passport.initialize());
   app.use(passport.session());
 
-  app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://tubular-cobbler-ec8367.netlify.app'); 
-    res.header('Access-Control-Allow-Credentials', 'true');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Accept, Authorization');
-    next();
+ app.enableCors({
+  credentials: true,
+  origin: 'https://tubular-cobbler-ec8367.netlify.app',
+  methods: 'GET, POST, PUT, PATCH, DELETE',
+  allowedHeaders: 'Content-Type, Accept, Authorization',
   });
-  // app.enableCors({
-  //   credentials: true,
-  //   origin: ['https://tubular-cobbler-ec8367.netlify.app']
-  // });
+  
+ 
 
   const config = new DocumentBuilder()
   .setTitle('BoilerMart')

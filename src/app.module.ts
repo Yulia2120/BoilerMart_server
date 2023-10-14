@@ -1,5 +1,5 @@
 import { SequelizeModule } from '@nestjs/sequelize';
-import { Module } from '@nestjs/common';
+import { Module} from '@nestjs/common';
 import { UsersModule } from './users/users.module';
 import { ConfigModule } from '@nestjs/config';
 import { SequelizeConfigService } from './config/sequelizeConfig.service';
@@ -23,6 +23,7 @@ import { PaymentModule } from './payment/payment.module';
     AuthModule,
     BoilerPartsModule,
     ShoppingCartModule,
-    PaymentModule],
+    PaymentModule,
+  ],
 })
 export class AppModule {}
