@@ -15,10 +15,9 @@ async function bootstrap() {
   app.use(passport.initialize());
   app.use(passport.session());
 
-
+  
   app.enableCors({
-    credentials: true,
-    origin: ['*']
+    credentials: true
   });
 
   const config = new DocumentBuilder()
