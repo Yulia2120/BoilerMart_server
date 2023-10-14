@@ -17,8 +17,15 @@ async function bootstrap() {
 
   app.enableCors({
     credentials: true,
-    origin: ['https://boiler-mart-client.vercel.app']
+    origin: ['http://localhost:3001', 'https://boiler-mart-client.vercel.app'],
+    allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept, Authorization', // Добавляем разрешенные заголовки
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Добавляем разрешенные HTTP-методы
   });
+  
+  // app.enableCors({
+  //   credentials: true,
+  //   origin: ['http://localhost:3001, https://boiler-mart-client.vercel.app']
+  // });
 
   const config = new DocumentBuilder()
   .setTitle('BoilerMart')
