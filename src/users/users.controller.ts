@@ -28,12 +28,12 @@ export class UsersController {
         return {user: req.user, msg: 'Logged in'};
     }
 
-    // @ApiOkResponse({type: LoginCheckResponse})
-    // @Get('/login-check')
-    // @UseGuards(AuthenticatedGuard)
-    // loginCheck(@Request() req){
-    //     return req.user;
-    // }
+    @ApiOkResponse({type: LoginCheckResponse})
+    @Get('/login-check')
+    @UseGuards(AuthenticatedGuard)
+    loginCheck(@Request() req){
+        return req.user;
+    }
 
     @ApiOkResponse({type: LogoutUserResponse})
     @Get('/logout')

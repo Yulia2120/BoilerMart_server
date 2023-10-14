@@ -15,17 +15,11 @@ async function bootstrap() {
   app.use(passport.initialize());
   app.use(passport.session());
 
+
   app.enableCors({
     credentials: true,
-    origin: ['http://localhost:3001', 'https://boiler-mart-client.vercel.app'],
-    allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept, Authorization', // Добавляем разрешенные заголовки
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Добавляем разрешенные HTTP-методы
+    origin: ['http://localhost:3001, https://boiler-mart-client.vercel.app']
   });
-  
-  // app.enableCors({
-  //   credentials: true,
-  //   origin: ['http://localhost:3001, https://boiler-mart-client.vercel.app']
-  // });
 
   const config = new DocumentBuilder()
   .setTitle('BoilerMart')
