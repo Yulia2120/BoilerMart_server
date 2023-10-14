@@ -17,7 +17,8 @@ async function bootstrap() {
 
   
   app.enableCors({
-    credentials: true
+    credentials: true,
+    origin: ['https://boiler-mart-client.vercel.app']
   });
 
   const config = new DocumentBuilder()
