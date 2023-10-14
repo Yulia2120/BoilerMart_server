@@ -18,7 +18,7 @@ async function bootstrap() {
   
   app.enableCors({
     credentials: true,
-    origin: ['https://boiler-mart-client.vercel.app']
+    origin: ['https://652a836e603f7a29840d1b67--spectacular-lokum-7c0117.netlify.app']
   });
 
   const config = new DocumentBuilder()
