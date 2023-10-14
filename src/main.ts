@@ -17,7 +17,8 @@ async function bootstrap() {
 
  app.enableCors({
   // credentials: true,
-  origin: 'https://tubular-cobbler-ec8367.netlify.app',
+  origin: '*',
+  //origin: 'https://tubular-cobbler-ec8367.netlify.app',
   // methods: 'GET, POST, PUT, PATCH, DELETE',
   // allowedHeaders: 'Content-Type, Accept, Authorization',
   });
