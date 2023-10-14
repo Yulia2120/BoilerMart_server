@@ -15,13 +15,18 @@ async function bootstrap() {
   app.use(passport.initialize());
   app.use(passport.session());
 
- app.enableCors({
-  // credentials: true,
-  origin: '*',
-  //origin: 'https://tubular-cobbler-ec8367.netlify.app',
-  // methods: 'GET, POST, PUT, PATCH, DELETE',
-  // allowedHeaders: 'Content-Type, Accept, Authorization',
-  });
+  app.enableCors({
+    credentials: false,
+    origin: '*',
+    methods: 'GET, POST, PUT, PATCH, DELETE',
+    allowedHeaders: 'Content-Type, Accept, Authorization',
+    });
+//  app.enableCors({
+//   credentials: true,
+//   origin: 'https://tubular-cobbler-ec8367.netlify.app',
+//   methods: 'GET, POST, PUT, PATCH, DELETE',
+//   allowedHeaders: 'Content-Type, Accept, Authorization',
+//   });
   
  
 
